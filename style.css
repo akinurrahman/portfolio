@@ -29,6 +29,8 @@ html {
 body {
   background-color: var(--bg-color);
   color: var(--text-color);
+      overflow-x: hidden;
+
 }
 
 .header {
@@ -423,7 +425,7 @@ span {
     transform: translateX(100%);
     transition: all 0.5s linear;
     visibility: hidden;
-    overflow-x: hidden;
+    
   }
 
   .active{
