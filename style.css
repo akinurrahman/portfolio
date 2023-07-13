@@ -29,8 +29,7 @@ html {
 body {
   background-color: var(--bg-color);
   color: var(--text-color);
-      overflow-x: hidden;
-
+  overflow-x: hidden;
 }
 
 .header {
@@ -390,10 +389,10 @@ span {
   .footer {
     padding: 2rem 3%;
   }
-  .education{
+  .education {
     padding-bottom: 7rem;
   }
-  .portfolio{
+  .portfolio {
     padding-bottom: 7rem;
   }
   .contact {
@@ -413,38 +412,44 @@ span {
     position: absolute;
     top: 0;
     left: 0;
-    height: 100vh;
+    height: 110vh;
     width: 100%;
-    background-color: var(--bg-color);
-    border-top: .1rem solid rgba(0,0,0.2);
-    box-shadow: 0,.5,1rem rgba(0,0,0,.2);
+    border-top: 0.1rem solid rgba(0, 0, 0.2);
+    box-shadow: 0, 0.5, 1rem rgba(0, 0, 0, 0.2);
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    transform: translateX(100%);
     transition: all 0.5s linear;
+
+    /* glass effect */
+    background: linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.1) rgba(255, 255, 255, 0)
+    );
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    transform: translateX(100%);
     visibility: hidden;
-    
   }
 
-  .active{
+  .active {
     visibility: visible;
     transform: translateX(0);
-
   }
   .navbar a {
     display: block;
     font-size: 3rem;
     margin: 1.5rem 0;
   }
-  .home{
+  .home {
     flex-direction: column;
   }
-  .home-content h3{
+  .home-content h3 {
     font-size: 2.6rem;
   }
-  .home-content h1{
+  .home-content h1 {
     font-size: 5rem;
   }
   .home-img img {
@@ -452,59 +457,57 @@ span {
     margin-top: 4rem;
   }
   /* about */
-  .about{
+  .about {
     flex-direction: column-reverse;
   }
-  .about img{
+  .about img {
     width: 70vw;
     margin-top: 4rem;
   }
-  .education h2{
+  .education h2 {
     margin-bottom: 3rem;
   }
-  .portfolio h2{
+  .portfolio h2 {
     margin-bottom: 3rem;
   }
-  .portfolio-container{
-    grid-template-columns: repeat(2,1fr);
+  .portfolio-container {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
-
-@media (max-width:617px) {
-  .portfolio-container{
+@media (max-width: 617px) {
+  .portfolio-container {
     grid-template-columns: 1fr;
   }
 }
 
-@media (max-width:450px) {
-  html{
+@media (max-width: 450px) {
+  html {
     font-size: 50%;
   }
   .input-box input {
     width: 100%;
   }
-  .home{
+  .home {
     padding-top: -13.6rem;
   }
 }
 
-@media (max-width:365px){
-
-.home-img img{
-  width: 90vw;
-}
-.about-img{
-  width: 90vw;
-}
-.footer{
-  flex-direction: column-reverse;
-}
-.footer p{
-  text-align: center;
-  margin-top: 2rem;
-}
-.home{
-  padding-top: -136px;
-}
+@media (max-width: 365px) {
+  .home-img img {
+    width: 90vw;
+  }
+  .about-img {
+    width: 90vw;
+  }
+  .footer {
+    flex-direction: column-reverse;
+  }
+  .footer p {
+    text-align: center;
+    margin-top: 2rem;
+  }
+  .home {
+    padding-top: -136px;
+  }
 }
