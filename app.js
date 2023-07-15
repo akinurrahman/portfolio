@@ -32,3 +32,9 @@ if(hamburger.contains="fa-xmark"){
   nav.classList.toggle('active')
 }
 })
+
+//  resume comming soon alert 
+const alertt = document.querySelector('.alert')
+alertt.addEventListener('click',()=>{
+  alert('Comming soon')
+})
