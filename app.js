@@ -38,3 +38,10 @@ const alertt = document.querySelector('.alert')
 alertt.addEventListener('click',()=>{
   alert('Comming soon')
 })
+
+// sent messege btn
+const submitBtn = document.querySelector('[value="Send Message"]')
+submitBtn.addEventListener('click',()=>{
+alert("Sorry! Messege cann't sent")
+
+})
