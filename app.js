@@ -33,11 +33,7 @@ if(hamburger.contains="fa-xmark"){
 }
 })
 
-//  resume comming soon alert 
-const alertt = document.querySelector('.alert')
-alertt.addEventListener('click',()=>{
-  alert('Comming soon')
-})
+
 
 // sent messege btn
 const submitBtn = document.querySelector('[value="Send Message"]')
